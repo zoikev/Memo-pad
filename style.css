@@ -1,0 +1,44 @@
+body {
+    margin: auto;
+    padding: 20px 0;
+    max-width: 400px;
+    height: 100vh;
+    background-image: linear-gradient(to top, #1d2b33,  #7e858a, #7e858a);
+}
+.pageContainer {
+    width: 400px;
+    height: 700px;
+    margin: 0px;
+    padding: 1px 20px;
+    background-color: aliceblue;
+    border-radius: 20px;
+}
+.inputBackground {
+    height: 20px;
+    width: 20px;
+}
+input {
+    border: 1px solid gray;
+}
+#area_dibujo {
+    background: #e9e77a;
+}
+#resetButton {
+    background: aliceblue;
+    font-weight: bold;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+canvas {
+    border: 1px solid #000000;
+}
+.paintArea {
+    max-width: 400px;
+    height: 400px;
+}
+
+/* FOOTER */
+footer {
+    padding: 16px;
+    text-align: center;
+}

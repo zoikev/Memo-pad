@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memo pad</title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6cb0c5e696.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <div class="pageContainer">
+      <h1>Memo pad</h1>
+      <div>
+        <span>Background Color</span>
+        <input class="inputBackground" type="button" id="background2" style="background-color: #e9e77a;" onclick="document.getElementById('area_dibujo').style.background ='#e9e77a'">
+        <input class="inputBackground" type="button" id="background3" style="background-color: #97e095;" onclick="document.getElementById('area_dibujo').style.background ='#97e095'">
+        <input class="inputBackground" type="button" id="background4" style="background-color: #8caee2;" onclick="document.getElementById('area_dibujo').style.background ='#8caee2'">
+        <input class="inputBackground" type="button" id="background1" style="background-color: #d3afa9;" onclick="document.getElementById('area_dibujo').style.background ='#d3afa9'">
+        <input class="inputBackground" type="button" id="background6" style="background-color: #000000;" onclick="document.getElementById('area_dibujo').style.background ='#000000'">
+        <input class="inputBackground" type="button" id="background5" style="background-color: #ffffff;" onclick="document.getElementById('area_dibujo').style.background ='#ffffff'">
+      </div>
+      <div>
+        <span>Stroke Color: </span>
+        <input type="color" id="colorTrazo" name="favcolorT" value="#000000">      
+        <span>Stroke Weight:</span>
+        <input type="range" id="grosorTrazo" name="grosorTrazo" min="1" max="8" value="3">
+        <button id="resetButton" onclick="resetMemoPad()">Reset</button>
+        <p>Draw, write or take notes.</p>
+      </div>
+      <div class="paintArea">      
+        <canvas width="400" height="400" id="area_dibujo"></canvas>
+      </div>
+      <footer>
+        <a href="https://zoikev.github.io/curriculum/"><h4>Contact Me</h4></a>            
+      </footer>
+    </div>    
+
+    <script src="scriptDibujo.js"></script>
+
+    </body>
+</html>
